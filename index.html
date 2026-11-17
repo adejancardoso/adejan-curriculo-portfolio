@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +7,18 @@
     <title>Adejan | Currículo Online</title>
     <meta name="description" content="Currículo online de Adejan com informações pessoais, experiência, formação e contato.">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpeg" href="imgs/adejan-3.jpeg">
+    <link rel="icon" type="image/jpeg" href="imgs/ade-top.jpeg">
+    
 </head>
 <body>
     <header class="site-header">
+
+        <!-- No início do seu body, defina o ponto de ancoragem -->
+        <div id="topo"></div>
+
+        <!-- Conteúdo da sua página aqui... -->
+
+
         <div class="header-container">
             <div class="imgs">
                 <img src="imgs/ade-top.jpeg" alt="Foto de perfil de Adejan">
@@ -129,24 +136,31 @@
             <div class="section-label">Projetos</div>
             <h2>Em destaque</h2>
 
-            <div class="projects-grid">
-                <article class="project-card">
-                    <span class="project-tag">Landing Page</span>
-                    <h3>Página institucional</h3>
-                    <p>Criação de layout moderno para apresentação de marca, serviços e contato com foco em conversão.</p>
-                </article>
+            <div class="projects-carousel" aria-label="Projetos em destaque">
+                <button class="carousel-button carousel-prev" type="button" aria-label="Projeto anterior">&#8249;</button>
 
-                <article class="project-card">
-                    <span class="project-tag">Portfólio</span>
-                    <h3>Currículo online</h3>
-                    <p>Estrutura visual profissional com foco em clareza, elegância e boa experiência de leitura.</p>
-                </article>
+                <div class="projects-grid" tabindex="0">
+                    <article class="project-card">
+                        <span class="project-tag">Landing Page</span>
+                        <h3>Página institucional</h3>
+                        <p>Criação de layout moderno para apresentação de marca, serviços e contato com foco em conversão.</p>
+                    </article>
 
-                <article class="project-card">
-                    <span class="project-tag">Interface</span>
-                    <h3>UX/UI</h3>
-                    <p>Desenvolvimento de interfaces com organização visual, consistência e melhor navegabilidade.</p>
-                </article>
+                    <article class="project-card">
+                        <span class="project-tag">Portfólio</span>
+                        <h3>Currículo online</h3>
+                        <p>Estrutura visual profissional com foco em clareza, elegância e boa experiência de leitura.</p>
+                    </article>
+
+                    <article class="project-card">
+                        <span class="project-tag">Interface</span>
+                        <h3>UX/UI</h3>
+                        <p>Desenvolvimento de interfaces com organização visual, consistência e melhor navegabilidade.</p>
+                    </article>
+                </div>
+
+                <button class="carousel-button carousel-next" type="button" aria-label="Próximo projeto">&#8250;</button>
+                <div class="carousel-dots" aria-label="Escolher projeto"></div>
             </div>
         </section>
 
@@ -173,10 +187,11 @@
 
             <div class="contact-layout">
                 <ul class="contact-list">
-                    <li><strong>Email:</strong> adejancardoso@gmail.com</li>
-                    <li><strong>Telefone:</strong> (27) 98811-4696</li>
+                    <li><strong>Email:</strong> <a href="mailto:adejancardoso@gmail.com" target="_blank">adejancardoso@gmail.com</a></li>
+                    <li><strong>Telefone:</strong> <a href="tel:+5527988114696" target="_blank"> WhatsApp (27) 98811-4696</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/adejancardoso" target="_blank">Adejan Cardoso</a></li>
                     <li><strong>Local:</strong> Serra, Espírito Santo</li>
-                    <li><strong>LinkedIn:</strong> Adejan Cardoso</li>
+                    
                 </ul>
 
                 <div class="contact-actions">
@@ -186,9 +201,16 @@
             </div>
         </section>
     </main>
+            <!-- Botão de voltar ao topo -->
 
+        <div class="footer-content">  
+        <a href="#topo" class="btn-topo">↑ Topo</a>
+        </div>
+        
     <footer class="site-footer">
-        <p>© 2026 Adejan Cardoso | Currículo Online</p>
+        
+        <p>© 2026 <a href="https://github.com/adejancardoso" target="_blank">Adejan Cardoso</a> | Currículo Online</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
